@@ -9,12 +9,17 @@ To write a Python program to convert the number **16** into its **binary represe
 3. Print the result.
 
 ## 🧾 Program
-
-Add Code Here
-
+```
+a=16
+b=bin(a)
+print(b)
+```
 ## Output
 
+<img width="1600" height="842" alt="WhatsApp Image 2026-05-31 at 7 36 56 PM" src="https://github.com/user-attachments/assets/2dc81284-6cf8-48fd-9637-8edb3beb1a3c" />
+
 ## Result
+Thus , the program is executed sucessfully
 
 # Functions in Python: Modulo Calculator
 
@@ -55,13 +60,20 @@ To write a Python program that defines a **lambda function** which takes two arg
 3. Call the function with the user inputs and print the result.
 
 ## 🧾 Program
-Add code here
+```
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+f = lambda a , b : a + b
+print("The sum is : ",f(a,b))
+```
 
 ## Output
+<img width="1600" height="846" alt="WhatsApp Image 2026-05-31 at 7 38 15 PM" src="https://github.com/user-attachments/assets/119801ef-b3b1-4312-b6f9-91b7ddf9cfc4" />
 
 ## Result
+Thus ,the program is executed successfully
 
- Looping(Patterns)-Pascal's Triangle Generator in Python
+ ## Looping(Patterns)-Pascal's Triangle Generator in Python
 This project demonstrates a simple Python program to generate Pascal’s Triangle, where the number of rows is provided by the user.
 
 ## Aim
@@ -78,11 +90,20 @@ Compute values using the formula:
 Print all rows of Pascal’s Triangle.
 End the program.
 ## Program
-Add Code Here
-
+```
+from math import factorial
+n = int(input("Enter the number of rows: "))
+for i in range(n):
+    print(' ' * (n - i - 1), end='')
+    for j in range(i + 1):
+        print(factorial(i) // (factorial(j) * factorial(i - j)), end=' ')
+    print()
+```
 ## Sample Output
+<img width="1600" height="856" alt="WhatsApp Image 2026-05-31 at 7 38 55 PM" src="https://github.com/user-attachments/assets/2b558824-5db2-4755-909b-80bd0642fab1" />
 
 ## Result
+Thus ,the program is executed successfully
 
 ## Loops in Python: Palindrome Number Checker
 
@@ -102,7 +123,21 @@ To write a Python program that checks whether a given number is a **palindrome**
    - Else, print that it is not a palindrome.
 
 ## 🧾 Program
-Add code Here
+```
+n = int(input("Enter a number: "))
+temp = n
+rev = 0
+while temp > 0:
+    rev = (10 * rev) + temp % 10
+    temp = temp // 10
+if rev == n:
+    print(n, "is a palindrome")
+else:
+    print(n, "is not a palindrome")
+```
+
 ## Output
+<img width="1600" height="844" alt="WhatsApp Image 2026-05-31 at 7 39 13 PM" src="https://github.com/user-attachments/assets/be19b28d-17a6-4c83-ba82-3b5a20db67ef" />
 
 ## Result
+Thus,the program is executed successfully
